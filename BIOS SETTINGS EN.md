@@ -1,5 +1,3 @@
-Certainly! Here is the translation of the Russian text to English while maintaining the formatting:
-
 ## CPU Common Options
 
 #### RedirectForReturnDis = Auto
