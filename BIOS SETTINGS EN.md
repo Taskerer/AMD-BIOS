@@ -67,21 +67,18 @@ This feature is used to manage data inversion on the memory bus. It helps reduce
 This setting controls the use of data encryption during information transfer between the processor and RAM. In modern systems with AMD processors, especially on server or high-performance platforms, memory encryption technology such as AMD Memory Guard may be used to protect data from unauthorized access.
 #### DRAM Temperature Controlled Refresh Mode = Disabled
 This setting regulates the data refresh rate in RAM based on its temperature. In DRAM, data is periodically refreshed to prevent data loss. At higher memory temperatures, more frequent refresh is required.
-#### Data Mask = Enabled
-This option may relate to a feature associated with data bus management or data masking during transmission to enhance data transfer consistency. The exact implementation and functionality may vary depending on the specific platform.
 #### ProcOdtAlwaysOn = Enabled
 This option specifies that **On-Die Termination (ODT)** on the processor should always remain enabled. The processor will maintain signal termination constantly, regardless of whether data transmission is currently in use or not.
-#### RRW Memory Test Control = Enabled
-This is a mechanism for testing memory for its correct operation. This option can enable or disable read-write-read tests to check the integrity of data transmitted in RAM.
 #### RRW Memory Test for all PStates = Disabled
 #### Memory Context Restore = Enabled
 #### CmdThrottleMode = lower
 This is a BIOS setting that manages the "Command Throttle" mode for the memory bus. This option affects how frequently commands can be sent to the memory controller. In some cases, this setting may help improve system stability, especially when using high-speed RAM or when overclocking.
+!!!!! NOT TESTED
 #### AddrTweakEn = 0x1
 #### ARdPtrInitValMP0 and ARdPtrInitValMP1 = try higher values
 #### DFI MRL Margin = from lower to higher
 #### CPU Vref Training Seed and Phy Vref Training Seed Control = tuning
-
+!!!!! NOT TESTED
 ## DF Debug Options
 #### OBFF = Enabled
 This is a technology related to power management, designed to optimize the interaction between the processor and other components, such as a video card and chipset. It allows for more efficient use of power-saving states at the system level.
